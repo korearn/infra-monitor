@@ -26,19 +26,19 @@ cuando se detectan anomalías. Sin servicios externos — 100% local.
 ## Estructura
 infra-monitor/
 ├── data/
-│   ├── alerts/         # Alertas exportadas con timestamp
-│   └── metrics/        # Referencia de métricas históricas
+│   ├── alerts/             # Alertas exportadas con timestamp
+│   └── metrics/            # Referencia de métricas históricas
 ├── scripts/
 │   ├── start_monitor.sh    # Inicia el daemon en background
 │   ├── stop_monitor.sh     # Detiene el daemon limpiamente
 │   └── status.sh           # Muestra estado actual del sistema
 ├── src/
-│   ├── collector.py    # Recolección de métricas con psutil
-│   ├── analyzer.py     # Detección de anomalías + diagnóstico LLM
-│   ├── alerter.py      # Visualización y exportación de alertas
-│   ├── database.py     # Persistencia SQLite
-│   └── main.py         # Loop principal del daemon
-└── requirements.txt
+│   ├── collector.py        # Recolección de métricas con psutil
+│   ├── analyzer.py         # Detección de anomalías + diagnóstico LLM
+│   ├── alerter.py          # Visualización y exportación de alertas
+│   ├── database.py         # Persistencia SQLite
+│   └── main.py             # Loop principal del daemon
+└── requirements.txt        # Dependencias del proyecto
 
 ## Instalación
 
