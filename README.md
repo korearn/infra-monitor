@@ -23,7 +23,9 @@ cuando se detectan anomalías. Sin servicios externos — 100% local.
 - **Bash** — control del daemon (start/stop/status)
 - **WSL/Arch Linux** — entorno de ejecución
 
-## Estructura
+## Estructura del Proyecto
+
+```text
 infra-monitor/
 ├── data/
 │   ├── alerts/             # Alertas exportadas con timestamp
@@ -39,6 +41,7 @@ infra-monitor/
 │   ├── database.py         # Persistencia SQLite
 │   └── main.py             # Loop principal del daemon
 └── requirements.txt        # Dependencias del proyecto
+```
 
 ## Instalación
 
